@@ -14,12 +14,13 @@ public class EchoBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
 
-        System.out.println("onUpdateReceived: " + update.getMessage());
+        System.out.println("onUpdateReceived: " + update);
 
         // We check if the update has a message and the message has text
         if (update.hasMessage() && update.getMessage().hasText()) {
             String message_text = update.getMessage().getText();
             long chat_id = update.getMessage().getChatId();
+            System.out.println("chat_id: " + chat_id);
 
             if (message_text.contains("hello") || message_text.contains("hi")) {
                 SendMessage message = new SendMessage() // Create a message object object
@@ -99,13 +100,13 @@ public class EchoBot extends TelegramLongPollingBot {
     public String getBotUsername() {
         // Return bot username
         // If bot username is @MyAmazingBot, it must return 'MyAmazingBot'
-        return "...Bot";
+        return "xxx";
     }
 
     @Override
     public String getBotToken() {
         // Return bot token from BotFather
-        return "123:abc";
+        return "xxx:xxx";
     }
 
 

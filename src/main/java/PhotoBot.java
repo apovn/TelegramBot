@@ -140,12 +140,12 @@ public class PhotoBot extends TelegramLongPollingBot {
     public String getBotUsername() {
         // Return bot username
         // If bot username is @MyAmazingBot, it must return 'MyAmazingBot'
-        return "EtAlertUserBot";
+        return "xxx";
     }
 
     @Override
     public String getBotToken() {
         // Return bot token from BotFather
-        return "517251917:AAFWEJ8y8getLGiu6M8igoOr3KdOxqJGT6A";
+        return "xxx:xxx";
     }
 }
